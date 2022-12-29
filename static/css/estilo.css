@@ -1,0 +1,146 @@
+#home {
+	background: #B45F04;
+	color: white;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+.orange {
+	background-color: orange;
+}
+}
+
+.imagemvoltar{
+	padding-left: 5px;
+
+}
+
+.margem20{
+    margin: 20px;
+}
+
+.margempgconst{
+    margin: 50px 30px;
+}
+
+
+.gray{
+    color: #4e5754;
+    text-align: justify;
+}
+
+.espaco{
+    padding-left:25px;
+}
+
+
+.fontejus{
+    text-align: justify;
+}
+
+.textblue{
+    color: blue;
+}
+
+.imgpadrao{
+    padding-left:110px;
+}
+
+.imagemtopo{
+	border-radius: 300px;
+	margin-left: 35px;
+	margin-top: 40px;
+	width: 300px;
+}
+
+.flagimg{
+	margin-left: 120px;
+}
+
+.up1{
+	font-size: 25px;
+}
+
+/* ANIMAÇÃO 1 */
+
+@keyframes animacao-caixa{
+	
+	from{   /* formatação inicial */
+		border-radius: 3px;				
+	}
+
+	
+	to{      /*formatação final */
+		border-radius: 300px;
+		padding: 0px 0px 0px 20px;
+	}
+}
+
+
+#animacao{
+	position: relative; /* para poder movimentar a caixa usando top e left*/
+
+	/*
+	animation-name: animacao-caixa;
+	animation-duration: 2s; 
+	animation-delay: 1s;             <--intervalo entre as repetições
+	animation-iteration-count: 23;   <--repetições
+	animation-direction: alternate;  <--volta para o estado inicial
+
+
+ ---- tudo isso acima pode ser feito em um comando ----*/
+
+ animation: animacao-caixa 8s 1s 300 alternate;
+}
+
+
+
+
+/* ANIMAÇÃO 2        https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay*/
+
+@keyframes animacao-caixa2 {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+#animacao2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation: animacao-caixa2 8s 1s;
+}
+
+
+
+
+
+/* ANIMAÇÃO 3  */
+
+@keyframes animacao-caixa3{
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+
+}
+
+#animacao3 {
+  
+ animation: animacao-caixa3 8s 1s;
+}
+
+
